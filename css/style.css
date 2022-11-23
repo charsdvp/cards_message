@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #111;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__cards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container__card{
+  margin-top: 80px;
+  max-height: 450px;
+  max-width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
+.card{
+  height: 430px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+}
+.card__img{
+  margin: 25px 0;
+  max-width: 180px;
+}
+.card__title{
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.card__title--denied{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+}
+.card__text{
+  margin-bottom: 25px;
+  color: #444;
+  font-size: 13px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+.card__text--red{
+  color: rgba(240, 59, 59, 0.782);
+  margin-bottom: 25px;
+}
+.link__download{  
+  margin: 25px 0;
+  font-family: sans-serif;
+  color:darkcyan;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card__button{
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 40px;
+  border: none;
+  font-weight: bold;
+  transition: all .3s;
+}
+.card__button--red{
+  border: 1px solid darkcyan;
+  color: darkcyan;
+}
+.card__button--red:hover{
+  color: #f5f5f5;
+  background-color: darkcyan;
+}
+.card__button--green{
+  color: #f5f5f5;
+  background-color:darkcyan;
+}
+.card__button--green:hover{
+  background-color: #f5f5f5;
+  border: 1px solid darkcyan;
+  color: darkcyan;
+}
+.footer{
+  font-family: sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 80px;
+  background: #222;
+  color: #999;
+}
+.footer__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.list__item{
+  list-style: none;
+}
+.list__item > a{
+  color: #888;
+}
+.item__social:hover{
+  cursor: pointer;
+  color: darkcyan;
+}
+@media screen and (max-width: 680px){
+  .container{
+    height: auto;
+  }
+  .container__cards{
+    margin-top: 50px;
+    height: auto;
+    flex-direction: column;
+  }
+  .container__card{
+    margin:0 0 50px 0;
+  }
+}
